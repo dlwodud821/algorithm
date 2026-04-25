@@ -1,8 +1,7 @@
 use std::collections::{HashMap, HashSet, VecDeque};
 
-use crate::algorithm::reconstruct_path;
+use crate::algorithm::{Node, reconstruct_path};
 
-pub type Node = usize;
 pub type Graph = HashMap<Node, Vec<Node>>;
 
 pub fn bfs(graph: &Graph, start: Node, goal: Node) -> Option<Vec<Node>> {
